@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: marketplace-api
+  profiles:
+    default: dev
+marketplace:
+  checkout:
+    reservation-minutes: 15
+  scheduler:
+    interval-minutes: 5
+  jwt:
+    expiration-minutes: ${MARKETPLACE_JWT_EXPIRATION_MINUTES:20}
+    secret: ${MARKETPLACE_JWT_SECRET:}

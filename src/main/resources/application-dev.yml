@@ -1,0 +1,8 @@
+marketplace:
+  checkout:
+    reservation-minutes: 15
+  scheduler:
+    interval-minutes: 5
+  jwt:
+    secret: ${MARKETPLACE_JWT_SECRET:${random.value}${random.value}}
+    expiration-minutes: ${MARKETPLACE_JWT_EXPIRATION_MINUTES:20}
