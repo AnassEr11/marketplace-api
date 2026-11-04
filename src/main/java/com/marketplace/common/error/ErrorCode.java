@@ -1,0 +1,14 @@
+package com.marketplace.common.error;
+
+public enum ErrorCode {
+    VALIDATION_FAILED,
+    RESOURCE_NOT_FOUND,
+    FORBIDDEN,
+    CONFLICT,
+    INSUFFICIENT_STOCK,
+    ILLEGAL_STATE_TRANSITION,
+    INTERNAL_ERROR,
+    MALFORMED_REQUEST,
+    METHOD_NOT_ALLOWED,
+    UNSUPPORTED_MEDIA_TYPE
+}
