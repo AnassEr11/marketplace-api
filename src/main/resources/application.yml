@@ -25,3 +25,8 @@ marketplace:
   jwt:
     expiration-minutes: ${MARKETPLACE_JWT_EXPIRATION_MINUTES:20}
     secret: ${MARKETPLACE_JWT_SECRET:}
+logging:
+  level:
+    com.marketplace: INFO
+  pattern:
+    level: "%5p [%X{correlationId:-}]"
